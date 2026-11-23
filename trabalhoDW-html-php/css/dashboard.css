@@ -1,0 +1,57 @@
+.pagina-painel {
+  max-width: 54rem;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--espaco-m);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: grid;
+  align-content: center;
+  gap: var(--espaco-p);
+  height: 100%;
+  min-height: 7rem;
+  padding: var(--espaco-g);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  box-shadow: var(--sombra);
+  color: var(--azul-escuro);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color var(--transicao), border-color var(--transicao);
+}
+
+.menu a:hover {
+  border-color: var(--azul);
+  background-color: var(--azul-claro);
+}
+
+.menu span {
+  color: var(--texto-secundario);
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+@media (max-width: 36rem) {
+  .menu ul {
+    grid-template-columns: 1fr;
+  }
+
+  .menu a {
+    min-height: 0;
+    padding: var(--espaco-m);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu a {
+    transition: none;
+  }
+}

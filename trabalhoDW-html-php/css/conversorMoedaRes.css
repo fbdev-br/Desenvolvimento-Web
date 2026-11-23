@@ -1,0 +1,6 @@
+.pagina-cotacao .resultado strong {
+  display: block;
+  margin-top: var(--espaco-p);
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}

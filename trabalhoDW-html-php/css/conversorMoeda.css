@@ -1,0 +1,7 @@
+.pagina-moeda {
+  max-width: 32rem;
+}
+
+.pagina-moeda input {
+  font-variant-numeric: tabular-nums;
+}

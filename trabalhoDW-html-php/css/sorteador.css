@@ -1,0 +1,15 @@
+.pagina-sorteador .resultado {
+  text-align: center;
+}
+
+.numero-sorteado {
+  color: var(--azul-escuro);
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.pagina-sorteador .resultado p {
+  color: var(--texto-secundario);
+}

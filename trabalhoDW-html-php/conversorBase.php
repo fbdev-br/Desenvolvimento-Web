@@ -25,36 +25,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Binário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conversorBase.css">
 </head>
 <body>
-    <h1>Conversor Binário</h1>
-    
-    <form method="POST" action="">
-        <label for="binario">Número Binário (Base 2):</label>
-        <input type="text" id="binario" name="binario" placeholder="Ex: 101101" value="<?= htmlspecialchars($binario) ?>"  required >
-    <button type="submit">Converter</button>
-    </form>
+    <main class="pagina pagina-binario">
+        <h1>Conversor binário</h1>
+        <form class="cartao" method="POST">
+            <div class="campo">
+                <label for="binario">Número binário (base 2)</label>
+                <input type="text" id="binario" name="binario" inputmode="numeric" placeholder="Ex.: 101101" value="<?= htmlspecialchars($binario) ?>" required>
+            </div>
+            <button class="botao" type="submit">Converter</button>
+        </form>
 
-    <?php if ($erro): ?>
-        <div><?= htmlspecialchars($erro) ?></div>
-    <?php endif; ?>
+        <?php if ($erro): ?>
+            <p class="aviso aviso-erro"><?= htmlspecialchars($erro) ?></p>
+        <?php endif; ?>
 
-    <?php if ($decimal !== ''): ?>
-        <div>
-            <div>
-                <h3>Decimal (Base 10):</h3>
-                <h3><?= htmlspecialchars($decimal) ?></h3>
-            </div>
-            <div>
-                <h3>Octal (Base 8):</h3>
-                <h3><?= htmlspecialchars($octal) ?></h3>
-            </div>
-            <div>
-                <h3>Hexadecimal (Base 16):</h3>
-                <h3><?= htmlspecialchars($hexadecimal) ?></h3>
-            </div>
+        <?php if ($decimal !== ''): ?>
+            <section class="cartao resultado">
+                <h2>Resultado da conversão</h2>
+                <dl>
+                    <div>
+                        <dt>Decimal (base 10)</dt>
+                        <dd><?= htmlspecialchars($decimal) ?></dd>
+                    </div>
+                    <div>
+                        <dt>Octal (base 8)</dt>
+                        <dd><?= htmlspecialchars($octal) ?></dd>
+                    </div>
+                    <div>
+                        <dt>Hexadecimal (base 16)</dt>
+                        <dd><?= htmlspecialchars($hexadecimal) ?></dd>
+                    </div>
+                </dl>
+            </section>
+        <?php endif; ?>
+
+        <div class="acoes">
+            <a class="botao botao-secundario" href="dashboard.php">Voltar ao painel</a>
         </div>
-    <?php endif; ?>
-    <button onclick="window.location.href='dashboard.php'">Voltar para a página inicial</button>
+    </main>
 </body>
 </html>

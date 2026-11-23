@@ -1,0 +1,28 @@
+.pagina-binario input {
+  font-family: "Courier New", monospace;
+}
+
+.resultado dl {
+  margin: 0;
+  display: grid;
+  gap: var(--espaco-p);
+}
+
+.resultado dl div {
+  padding: var(--espaco-p) var(--espaco-m);
+  border-radius: var(--raio);
+  background: var(--fundo);
+}
+
+.resultado dt {
+  color: var(--texto-secundario);
+  font-size: 0.875rem;
+}
+
+.resultado dd {
+  margin: 0;
+  color: var(--azul-escuro);
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}

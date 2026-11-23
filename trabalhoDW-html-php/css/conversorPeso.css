@@ -1,0 +1,10 @@
+.pagina-peso .resultado p {
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pagina-peso .resultado strong {
+  padding: 0.125rem var(--espaco-p);
+  border-radius: var(--raio);
+  background: var(--azul-claro);
+}
