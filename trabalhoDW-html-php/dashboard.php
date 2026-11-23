@@ -1,23 +1,3 @@
-<!-- <?php
-$nome = "aluno";
-$email = "aluno@teste.com";
-$senha = "123456";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $uemail = $_POST["e-mail"];
-    $usenha = $_POST["password"];
-
-    if ($uemail === $email && $usenha === $senha) {
-        session_start();
-        $_SESSION["logado"] = true;
-        header("Location: dashboard.php");
-        exit;
-    } else {
-        echo "<h1>Usuário ou senha incorretos.</h1>";
-    }
-}
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
