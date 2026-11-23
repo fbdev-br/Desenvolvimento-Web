@@ -1,0 +1,140 @@
+
+body {
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #263449;
+  background: #abc0eb;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: #183b73;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #183b73;
+}
+
+/* Cartão usado nos formulários */
+form {
+  max-width: 460px;
+  margin: 24px auto;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d8e0ed;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 93%;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #bdc9dc;
+  border-radius: 8px;
+  font: inherit;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #2457a7;
+  outline: 2px solid #c9d9f5;
+}
+
+/* Botões */
+button {
+  margin-top: 1px;
+  margin: 0 15px 0 0;
+  gap: 18px;
+  padding: 8px 18px;
+  color: #ffffff;
+  background: #2457a7;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background: #183b73;
+}
+
+/* Cartões com links no painel inicial */
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+nav a {
+  display: block;
+  min-height: 80px;
+  padding: 18px;
+  color: #183b73;
+  background: #ffffff;
+  border: 1px solid #d8e0ed;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+nav a:hover {
+  color: #2457a7;
+  border-color: #2457a7;
+}
+
+/* Caixa para os resultados das conversões */
+body > p,
+body > div {
+  max-width: 520px;
+  margin: 20px auto;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #d8e0ed;
+  border-radius: 10px;
+}
+
+body > div > div {
+  padding: 8px 0;
+  border-bottom: 1px solid #d8e0ed;
+}
+
+body > div > div:last-child {
+  border-bottom: 0;
+}
+
+/* Em telas pequenas, organiza o menu em uma coluna */
+@media (max-width: 600px) {
+  body {
+    padding: 28px 16px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+}
