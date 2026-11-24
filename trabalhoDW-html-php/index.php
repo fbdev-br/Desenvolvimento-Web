@@ -32,7 +32,7 @@
             header("Location: dashboard.php");
             exit;
         } else {
-            echo "<h1>Usuário ou senha incorretos.</h1>";
+            echo "<h1 style="color: red;">Usuário ou senha incorretos.</h1>";
         }
     }
     ?>
